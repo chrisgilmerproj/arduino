@@ -33,4 +33,4 @@ See the following retired Sparkfun Products:
 ArduIMU Sensor Board - http://www.sparkfun.com/products/9372
 Gyro LISY300AL       - http://www.sparkfun.com/products/8955
 
-Note: The main board can be combined with two retired gyro boards to become 6DOF, otherwise it remains 4DOF (XYZ-acc, X-gyro)
+Note: The main board can be combined with two retired gyro boards to become 6DOF, otherwise it remains 4DOF (XYZ-acc, Z-gyro)
