@@ -1,3 +1,6 @@
+ArduIMU Sensor Board - Six Degrees of Freedom (Main)
+sku: GPS-09372
+
 Replacement: None. We do not have a direct replacement for this board, but check out all of our IMUs for a possible substitute. This page is for reference only.
 
 Description: The Arduino-compatible IMU is a project by Chris Anderson and Jordi Muñoz to create an AHRS (attitude heading reference system) for UAV control and general motion capture. This is the main board for the ArduIMU 6DOF. By itself, this board works as a 4DOF -- it produces three axes of acceleration and one axis of angular velocity data. This board can be connected to up to two Ardu 6DOF daughter boards which will each add one more axis of angular velocity information.
@@ -26,3 +29,8 @@ Documents:
 
 5-19-2010: We will be slowly retiring this board over the next few months. The LISY300AL is a very good gyro, but there is quickly dual and triple axis single ICs coming out.
 
+See the following retired Sparkfun Products:
+ArduIMU Sensor Board - http://www.sparkfun.com/products/9372
+Gyro LISY300AL       - http://www.sparkfun.com/products/8955
+
+Note: The main board can be combined with two retired gyro boards to become 6DOF, otherwise it remains 4DOF (XYZ-acc, X-gyro)
