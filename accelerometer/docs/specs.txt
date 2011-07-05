@@ -1,0 +1,28 @@
+Replacement: None. We do not have a direct replacement for this board, but check out all of our IMUs for a possible substitute. This page is for reference only.
+
+Description: The Arduino-compatible IMU is a project by Chris Anderson and Jordi Muñoz to create an AHRS (attitude heading reference system) for UAV control and general motion capture. This is the main board for the ArduIMU 6DOF. By itself, this board works as a 4DOF -- it produces three axes of acceleration and one axis of angular velocity data. This board can be connected to up to two Ardu 6DOF daughter boards which will each add one more axis of angular velocity information.
+
+The ArduIMU 6DOF main board comes equipped with one LISY300AL, a single axis ±300°/s gyro, and one ADXL335, a three axis ±3g accelerometer. All filtering components are included. There are no on-board regulators so power provided should be clean and regulated 3.3V.
+
+Having a hard time picking an IMU? Our Accelerometer, Gyro, and IMU Buying Guide might help!
+
+Features:
+* 4 degrees of freedom:
+** ADXL335 - three axes of acceleration, ±3g range
+** LISY300AL - one axis of angular velocity, ±300°/s range
+* Compatible with ArduIMU 6DOF daughter boards to get up to 6 degrees of freedom
+* Analog output of all 6 axes is sent to ArduIMU analog pins
+* 0.1" pitch headers to connect to daughter boards and ArduIMU
+
+Dimensions: 0.9x0.6"
+
+Documents:
+* Schematic
+* LISY300AL datasheet
+* ADXL335 datasheet
+* ArduPilot Project Homepage
+* Software and instructions: DIY Drones Community
+* ArduPilot IMU Software Demo (YouTube)
+
+5-19-2010: We will be slowly retiring this board over the next few months. The LISY300AL is a very good gyro, but there is quickly dual and triple axis single ICs coming out.
+
