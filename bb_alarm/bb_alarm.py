@@ -5,6 +5,7 @@ import datetime
 import getpass
 import glob
 import optparse
+import string
 import struct
 import sys
 import time
@@ -129,7 +130,7 @@ if __name__ == '__main__':
                 mag = 1.5
             elif value == 'failed':
                 mag = 0.1
-            print key, value
+            print string.ljust(key, 15), value
 
             # Pack up the value and send it
             packed = struct.pack('f', mag)
