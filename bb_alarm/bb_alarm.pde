@@ -58,7 +58,7 @@ void alarm(float val)
   BlinkM_fadeToHSB(blinkm_addr, h, s, b);
   
   // Wait for 10 seconds equal
-  delay(int(10 * 1000));
+  delay(int(2.0 * 1000));
   
   // Turn off the lights and motors
   digitalWrite(ledPin, LOW);

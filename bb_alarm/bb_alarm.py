@@ -1,6 +1,7 @@
 #! /usr/local/bin/python
 
 import binascii
+import datetime
 import getpass
 import glob
 import optparse
@@ -87,9 +88,11 @@ if __name__ == '__main__':
         'twisted-only',
         'style',
         'javascript',
-        'build_dist',
-        'noit_merged',
-        'noit_java_only_old_iep',
+        #'api',
+        #'qe',
+        #'build_dist',
+        #'noit_merged',
+        #'noit_java_only_old_iep',
     ]
     while 1:
         build_status = {}
@@ -115,14 +118,18 @@ if __name__ == '__main__':
             else:
                 build_status[build] = None
 
+        print '\n', datetime.datetime.now()
+
         for key in build_list:
             value = build_status[key]
-            mag = 5.0
+            mag = 1.5
             if value == 'successful':
                 mag = 5.0
-            else:
-                mag = 1.0
-            print key, value, mag
+            elif value == 'tests':
+                mag = 1.5
+            elif value == 'failed':
+                mag = 0.1
+            print key, value
 
             # Pack up the value and send it
             packed = struct.pack('f', mag)
@@ -132,7 +139,7 @@ if __name__ == '__main__':
             try:
                 ser.write(packed)
 
-                time.sleep(5.0)
+                time.sleep(2.0)
 
                 # Confirm that value was received
                 confirm = ser.readline()
