@@ -113,7 +113,10 @@ if __name__ == '__main__':
                 sys.exit()
 
             if 'text' in build_data['-1']:
-                build_status[build] = build_data['-1']['text'][1]
+                if len(build_data['-1']['text']) == 2:
+                    build_status[build] = build_data['-1']['text'][1]
+                else:
+                    build_status[build] = build_data['-1']['text'][0]
             elif 'text' in build_data['-2']:
                 build_status[build] = build_data['-2']['text'][1]
             else:
